@@ -36,6 +36,8 @@ There are 3 questions and there should be at least 3 separate commits, at least 
 
 <!--Decide on your methods:  In this section explain the approach you will take to attack the issue --- how will you decide on a likely estimate of professor Brownlow's earnings or losses after 637 bets. Also explain how you construct a 95% confidence interval about your estimate of his winnings !-->
 
+we will use the BrLw function  
+
 ```{r}
 BrLw(35,4.35,637)
 ```
@@ -59,12 +61,13 @@ print(sorted[12])
 print(sorted[488])
 ```
 
+this histogram shows that brownlow won 107.35 and lost 101.3 which is still considered to be a profit for him.
 
 # What size of class makes the 2:1 bet fair?  
 <!--Explain and display the results of your method of coming up with the estimate of professor Brownlows betting profits!-->
 
 ```{r}
-BrLw(35,4.35,637)
+BrLw(29,2,637)
 ```
 
 
@@ -87,12 +90,64 @@ print(sorted[12])
 print(sorted[488])
 ```
 
+this histogram shows that brownlow won 100 and lost 44 which is still considered to be a profit for him.
+
+
+```{r}
+BrLw(35,2,637)
+```
+
+
+
+```{r}
+bank=numeric()
+for(j in 1:1000){
+  
+  
+
+bank[j] =BrLw(35,2,637)}
+```
+
+
+```{r}
+hist(bank)
+favstats(bank)
+sorted <- sort(bank)
+print(sorted[25])
+print(sorted[975])
+```
+
+
 # In the class and payoff as described what is a 95% confidence interval for Brownlow's earnings?
   
 <!--Explain and display your method of coming up with a 95% confidence interval of  professor Brownlows winnings (or losings)-->
 
+```{r}
+bank=numeric()
+for(j in 1:1000){
+  
+  
+
+bank[j] =BrLw(35,2,637)}
+```
+
+
+```{r}
+hist(bank)
+favstats(bank)
+sorted <- sort(bank)
+print(sorted[25])
+print(sorted[975])
+```
+
+this shows that brownlow kept winning from the range of 223 till 340 and that shows that he's winning.
+
+
+we will do this 1000 times in order to get 35% confidence interval. we will sort it from low to high and take the 25th one and the 975th one to get the middle 95%
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
+
+
 
