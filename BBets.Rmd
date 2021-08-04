@@ -149,5 +149,5 @@ we will do this 1000 times in order to get 35% confidence interval. we will sort
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
 
-
+the histograms show that brownlow wing and gains profit every time and that shows that he is winning. 
 
